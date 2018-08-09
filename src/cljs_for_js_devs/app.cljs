@@ -1,12 +1,14 @@
 (ns cljs-for-js-devs.app
-    (:require-macros [cljss.core :refer [defstyles]])
-    (:require [reagent.core :as r]))
+    (:require [reagent.core :as r]
+              [stylefy.core :refer [use-style]]))
 
-(defstyles header []
-  {:font-size "36px"
-   :font-weight "bold"})
+(def header-style
+  {:font-size "24px"
+   :font-weight "bold"
+   :padding "0"
+   :margin "0"})
 
 (defn root []
-  [:h1 {:class (header)}
+  [:h1 (use-style header-style)
    "Hello, world!"])
 

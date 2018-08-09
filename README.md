@@ -83,7 +83,12 @@ our `src` directory, we can see a `cljs_for_js_devs/core.cljs` file. If you
 open that file, you'll see it declares a `cljs-for-js-devs.core` namespace. All
 ClojureScript source files should follow this pattern.
 
-Feel free to make changes to the core namespace and hit save. shadow-cljs will
+We use a library called [Reagent](http://reagent-project.github.io/), which is
+a thin ClojureScript interface to React. We mount the main React component
+(defined in `cljs_for_js_devs/app.cljs`) inside the `#root` element in our
+HTML.
+
+Feel free to make changes to the app namespace and hit save. shadow-cljs will
 pick up on those changes, recompile your code, and hot-reload your browser.
 
 You're now all set-up to start writing ClojureScript code. You can install
