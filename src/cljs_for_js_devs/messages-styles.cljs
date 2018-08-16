@@ -10,7 +10,7 @@
   :font-size "1.5em"
   :width "2em"
   :height "2em"
-  :line-height "2.5em"
+  :line-height "2em"
   :text-align "center"
   :border "2px solid #00c19e"
   :border-radius "50%"
