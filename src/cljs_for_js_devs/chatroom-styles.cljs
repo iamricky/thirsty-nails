@@ -11,6 +11,17 @@
    :outline "none"
    :font "bold 14px Lato, sans-serif"})
 
+(def label-style
+  {:position "relative"
+   :stylefy/mode {:before
+                   {:content ""
+                    :position "absolute"
+                    :left "10px"
+                    :top "0"
+                    :bottom "0"
+                    :width "20px"
+                    :background "url(https://s3.amazonaws.com/bakery-assets.workframe.com/ui/resources/user-icon.svg) center / contain no-repeat"}}})
+
 (def input-style
   {:margin "20px auto"
    :padding "10px"
